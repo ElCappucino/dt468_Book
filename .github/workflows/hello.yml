@@ -2,6 +2,7 @@ name: Hello World
 on:
   push:
     branches: ["main"]
+  workflow_dispatch: 
 jobs:
   hello1:
     runs-on: ubuntu-latest
