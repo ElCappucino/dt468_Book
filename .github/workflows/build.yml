@@ -11,7 +11,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: testq1
-        run:
+        run: |
           pwd
           ls
           g++ -std=c++11 ExampleCode/negarr.cpp ExampleCode/proxy.cpp
