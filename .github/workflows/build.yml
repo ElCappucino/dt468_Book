@@ -1,0 +1,17 @@
+name: build code
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: testq1
+        run:
+          pwd
+          g++ -std=c++11 ExampleCode/negarr.cpp ExampleCode/proxy.cpp
+  
