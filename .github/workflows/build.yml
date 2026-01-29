@@ -13,5 +13,6 @@ jobs:
       - name: testq1
         run:
           pwd
+          ls
           g++ -std=c++11 ExampleCode/negarr.cpp ExampleCode/proxy.cpp
   
